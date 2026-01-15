@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../output.css" rel="stylesheet">
+</head>
+
+<body id="body" class="min-h-screen flex flex-col">
+
+  <nav class="flex justify-center pt-7 md:ml-18">
+    <ul class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-25 list-none font-iceland font-bold text-2xl">
+      <li class="text-center">
+        <button class="relative text-white transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110
+        after:absolute after:left-0 after:-bottom-0.5 after:h-0.5 after:w-0 after:bg-[#BB423B] after:transition-all hover:after:w-full hover:text-[#BB423B]">
+          <a href="../../index.html">HOME</a>
+        </button>
+      </li>
+      <li class="text-center">
+        <button class="text-[#BB423B] transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110 underline">
+          <a href="portfolio.html">PORTOFOLIO</a>
+        </button>
+      </li>
+      <li class="text-center">
+        <button class="relative text-white transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110
+        after:absolute after:left-0 after:-bottom-0.5 after:h-0.5 after:w-0 after:bg-[#BB423B] after:transition-all hover:after:w-full hover:text-[#BB423B]">
+          <a href="certificates.html">CERTIFICATES</a>
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+  <h1 class="text-white text-4xl mt-10 font-iceland text-center">
+    PORTFOLIO
+  </h1>
+
+ <section class="flex flex-col items-center justify-center gap-10 mt-20">
+  <!-- İlk satır -->
+  <div class="flex flex-col md:flex-row gap-15">
+    <!-- Kart 1 -->
+    <div class="flex flex-col items-center md:items-start  p-12 rounded-lg">
+      <img src="../images/foto.png" class="w-full md:w-150 h-auto rounded-md">
+      <h2 class="text-2xl font-bold text-[#BB423B] italic mt-4">Hoofdtitle</h2>
+      <button class="bg-[#7D2E32] px-5 py-1 rounded-4xl text-white text-xs mt-2">JavaScript</button>
+      <p class="text-white mt-4 text-xl font-iceland">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+    </div>
+    <!-- Kart 2 -->
+   <div class="flex flex-col items-center md:items-start  p-12 rounded-lg">
+      <img src="../images/foto.png" class="w-full md:w-150 h-auto rounded-md">
+      <h2 class="text-2xl font-bold text-[#BB423B] italic mt-4">Hoofdtitle</h2>
+      <button class="bg-[#7D2E32] px-5 py-1 rounded-4xl text-white text-xs mt-2">JavaScript</button>
+      <p class="text-white mt-4 text-xl font-iceland">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+    </div>
+  </div>
+
+  <!-- İkinci satır -->
+  <div class="flex flex-col md:flex-row gap-10">
+    <!-- Kart 3 -->
+    <div class="flex flex-col items-center md:items-start  p-12 rounded-lg">
+      <img src="../images/foto.png" class="w-full md:w-150 h-auto rounded-md">
+      <h2 class="text-2xl font-bold text-[#BB423B] italic mt-4">Hoofdtitle</h2>
+      <button class="bg-[#7D2E32] px-5 py-1 rounded-4xl text-white text-xs mt-2">JavaScript</button>
+      <p class="text-white mt-4 text-xl font-iceland">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+    </div>
+    <!-- Kart 4 -->
+    <div class="flex flex-col items-center md:items-start  p-12 rounded-lg">
+      <img src="../images/foto.png" class="w-full md:w-150 h-auto rounded-md">
+      <h2 class="text-2xl font-bold text-[#BB423B] italic mt-4">Hoofdtitle</h2>
+      <button class="bg-[#7D2E32] px-5 py-1 rounded-4xl text-white text-xs mt-2">JavaScript</button>
+      <p class="text-white mt-4 text-xl font-iceland">
+        Lorem ipsum dolor sit amet, cor adipiscing elit.
+      </p>
+    </div>
+</section>
+
+
+  <footer class="bg-[#330104] h-15">
+    <p class="text-white text-center md:text-4xl text-xl md:p-2 p-4">
+      © 2025 Ismet Kahya All rights reserved.
+    </p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      VANTA.CELLS({
+        el: "#body",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: false,
+        minHeight: 200.00,
+        minWidth: 200.00,
+        scale: 1.00,
+        color1: 0x56080d,
+        color2: 0x0,
+        size: 4.90,
+        speed: 3.0,
+      });
+    });
+  </script>
+
+</body>
+</html>
