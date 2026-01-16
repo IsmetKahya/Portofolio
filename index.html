@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="dist/output.css" rel="stylesheet">
 </head>
-
+<script src="dist/script/script.js" defer></script>
 <body id="body" class="m-0 p-0 bg-[#56080D]">
 
  <nav class="flex justify-center pt-7 md:ml-18">
@@ -34,15 +34,20 @@
 
   <!-- end navbar -->
 
-  <h1 class="text-white text-2xl font-bold md:ml-40 mt-10 md:text-left text-center">
-    Hello, I'm <span class="text-[#BB423B]">Ismet Kahya</span>.
-  </h1>
+<h1 id="typeText" class="text-white text-2xl font-bold md:ml-40 mt-10 md:text-left text-center h-10">
+  Hello, I'm <span class="text-[#BB423B]">Ismet Kahya</span>.
+</h1>
   <section class="flex mt-10  md:h-90 grid md:grid-cols-2 ">
     <div class="hoofdtext md:mt-15">
 
-      <h2 class="md:text-8xl  font-bold bg-gradient-to-r from-[#BB423B] to-[#551E1B] bg-clip-text text-transparent text-center text-6xl">
-        SOFTWARE DEVELOPER
-      </h2>
+      <h2 id="heroTitle"
+    class="md:text-8xl font-bold bg-gradient-to-r from-[#BB423B] to-[#551E1B]
+           bg-clip-text text-transparent text-center text-6xl
+           opacity-0 translate-y-10 transition-all duration-10000 ease-out">
+  SOFTWARE DEVELOPER
+</h2>
+
+
     </div>
 
     <div class="recht flex flex-col md:flex-row items-center justify-center space-y-10 md:mr-20">
@@ -53,7 +58,7 @@
       <div
         class="card  w-60 h-80 flex md:ml-20 fill-red-500 hover:drop-shadow-[2px_2px_25px_rgba(255,0,0,1)] drop-shadow-[2px_2px_10px_rgba(255,0,0,1)] transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
         <div class="content w-full h-full">
-          <img src="" alt="" class="w-full h-full object-cover bg-white mb-10">
+          <img src="dist/images/myfoto.jpeg" alt="" class="w-full h-full object-cover bg-white mb-10">
         </div>
       </div>
     </div>
@@ -73,12 +78,12 @@
     </div>
 
     <div class="logos flex space-x-5 justify-center md:justify-start mt-10 md:ml-40">
-      <img src="dist/images/github.png" alt="github logo"
-        class="w-18 h-18 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
-      <img src="dist/images/linkedln.png" alt="linkedln logo"
-        class="w-18 h-18 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
-      <img src="dist/images/instagram.png" alt="instagram logo"
-        class="w-18 h-18 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+      <a href="https://github.com/IsmetKahya"><img src="dist/images/github.png" alt="github logo"
+        class="w-18 h-18 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
+      <a href="https://www.linkedin.com/in/ismet-kahya/"><img src="dist/images/linkedln.png" alt="linkedln logo"
+        class="w-18 h-18 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
+      <a href="#"><img src="dist/images/instagram.png" alt="instagram logo"
+        class="w-18 h-18 transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110"></a>
     </div>
 
     <div class="about mt-30 mb-20 mr-15 flex hover:scale-105 transition-transform duration-300 ease-in-out">
@@ -218,27 +223,6 @@
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
-
-  <!-- VANTA Effect Initialization -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      VANTA.CELLS({
-        el: "#body",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        color1: 0x56080d,
-        color2: 0x0,
-        size: 4.90,
-        speed: 3.0,
-      });
-    });
-  </script>
-
-
 
 </body>
 
