@@ -7,8 +7,9 @@
     "build": "tailwindcss -i src/input.css -o dist/output.css --minify"
   },
   "dependencies": {
-    "tailwindcss": "^4.1.17",
+    "@tailwindcss/cli": "^4.1.18",
+    "autoprefixer": "^10.4.0",
     "postcss": "^8.4.0",
-    "autoprefixer": "^10.4.0"
+    "tailwindcss": "^4.1.17"
   }
 }
