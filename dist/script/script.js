@@ -23,9 +23,6 @@ window.addEventListener("DOMContentLoaded", () => {
   type();
 });
 
-
-
-
 document.addEventListener("DOMContentLoaded", function () {
       VANTA.CELLS({
         el: "#body",
