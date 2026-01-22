@@ -37,33 +37,48 @@
 <h1 id="typeText" class="text-white text-2xl font-bold md:ml-40 mt-10 md:text-left text-center h-10">
   Hello, I'm <span class="text-[#BB423B]">Ismet Kahya</span>.
 </h1>
-  <section class="flex mt-10  md:h-90 grid md:grid-cols-2 ">
-    <div class="hoofdtext md:mt-15">
+  <section class="mt-90 grid md:grid-cols-2 md:gap-6">
+  
+  <!-- SOL TARAF -->
+  <div class="hoofdtext md:mt-15 flex items-center justify-center">
+    <h2
+      id="heroTitle"
+      class="md:text-8xl font-bold bg-gradient-to-r from-[#BB423B] to-[#551E1B]
+             bg-clip-text text-transparent text-center text-6xl
+             opacity-0 translate-y-10 transition-all duration-10000 ease-out mb-10">
+      SOFTWARE DEVELOPER
+    </h2>
+  </div>
 
-      <h2 id="heroTitle"
-    class="md:text-8xl font-bold bg-gradient-to-r from-[#BB423B] to-[#551E1B]
-           bg-clip-text text-transparent text-center text-6xl
-           opacity-0 translate-y-10 transition-all duration-10000 ease-out">
-  SOFTWARE DEVELOPER
-</h2>
+  <!-- SAĞ TARAF -->
+  <div class="right flex flex-col md:flex-row items-center justify-start space-y-10 md:space-y-0 md:-ml-16 mt-5">
 
+    <!-- LOGO -->
+    <img
+      src="dist/images/logo.png"
+      alt="logo"
+      class="md:h-48 md:w-auto md:mr-6 md:mt-0 mt-10 mb-10 md:mb-0"
+    >
 
-    </div>
+    <!-- CARD -->
+    <div
+      class="card w-60 h-80 flex
+             fill-red-500 hover:drop-shadow-[2px_2px_25px_rgba(255,0,0,1)]
+             drop-shadow-[2px_2px_10px_rgba(255,0,0,1)]
+             transition-transform duration-300 ease-in-out
+             hover:-translate-y-1 hover:scale-110 md:ml-40 mt-10">
 
-    <div class="right flex flex-col md:flex-row items-center justify-center space-y-10">
-
-      <img src="dist/images/logo.png" alt="logo" class="  md:h-48 md:w-auto w-64 md:mx-0 mx-auto md:mt-0 mt-10 mb-10 md:mb-0 md:mr-5">
-
-      <!-- card -->
-      <div
-        class="card  w-60 h-80 flex md:ml-20 fill-red-500 hover:drop-shadow-[2px_2px_25px_rgba(255,0,0,1)] drop-shadow-[2px_2px_10px_rgba(255,0,0,1)] transition-transform duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
-        <div class="content w-full h-full">
-          <img src="dist/images/myfoto.jpeg" alt="" class="w-full h-full object-cover bg-white mb-10">
-        </div>
+      <div class="content w-full h-full">
+        <img
+          src="dist/images/myfoto.jpeg"
+          alt=""
+          class="w-full h-full object-cover bg-white">
       </div>
     </div>
 
-  </section>
+  </div>
+</section>
+
   <!-- end first section -->
 
 
