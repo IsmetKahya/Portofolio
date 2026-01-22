@@ -39,3 +39,27 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+console.log("JS LOADED");
+
+document.addEventListener("DOMContentLoaded", () => {
+  const modal = document.getElementById("cvModal");
+  const openBtn = document.getElementById("cvTrigger");
+  const closeBtn = document.getElementById("closeCvBtn");
+
+  console.log(modal, openBtn, closeBtn);
+
+  if (!modal || !openBtn || !closeBtn) {
+    console.error("Element bulunamadi");
+    return;
+  }
+
+  openBtn.addEventListener("click", () => {
+    modal.classList.remove("hidden");
+    document.body.classList.add("overflow-hidden");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.classList.add("hidden");
+    document.body.classList.remove("overflow-hidden");
+  });
+});
