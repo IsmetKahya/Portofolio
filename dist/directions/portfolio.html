@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../output.css" rel="stylesheet">
 </head>
-
+<script src="../script/script.js" defer></script>
 <body id="body" class="min-h-screen flex flex-col">
 
   <nav class="flex justify-center pt-7 md:ml-18">
@@ -34,50 +34,65 @@
     PORTFOLIO
   </h1>
 
- <section class="flex flex-col items-center justify-center gap-10 mt-20">
-  <!-- İlk satır -->
-  <div class="flex flex-col md:flex-row gap-15">
-    <!-- Kart 1 -->
-    <div class="flex flex-col items-center md:items-start  p-12 rounded-lg">
-      <img src="../images/foto.png" class="w-full md:w-150 h-auto rounded-md">
-      <h2 class="text-2xl font-bold text-[#BB423B] italic mt-4">Hoofdtitle</h2>
-      <button class="bg-[#7D2E32] px-5 py-1 rounded-4xl text-white text-xs mt-2">JavaScript</button>
-      <p class="text-white mt-4 text-xl font-iceland">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
-    </div>
-    <!-- Kart 2 -->
-   <div class="flex flex-col items-center md:items-start  p-12 rounded-lg">
-      <img src="../images/foto.png" class="w-full md:w-150 h-auto rounded-md">
-      <h2 class="text-2xl font-bold text-[#BB423B] italic mt-4">Hoofdtitle</h2>
-      <button class="bg-[#7D2E32] px-5 py-1 rounded-4xl text-white text-xs mt-2">JavaScript</button>
-      <p class="text-white mt-4 text-xl font-iceland">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      </p>
-    </div>
-  </div>
+<section class="mt-10 mb-10 px-6">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-7xl mx-auto">
 
-  <!-- İkinci satır -->
-  <div class="flex flex-col md:flex-row gap-10">
-    <!-- Kart 3 -->
-    <div class="flex flex-col items-center md:items-start  p-12 rounded-lg">
-      <img src="../images/foto.png" class="w-full md:w-150 h-auto rounded-md">
-      <h2 class="text-2xl font-bold text-[#BB423B] italic mt-4">Hoofdtitle</h2>
-      <button class="bg-[#7D2E32] px-5 py-1 rounded-4xl text-white text-xs mt-2">JavaScript</button>
-      <p class="text-white mt-4 text-xl font-iceland">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <!-- Kart 1 -->
+    <div class="flex flex-col items-start p-12 rounded-lg">
+      <img src="../portfolio-images/azerihome.png"
+           class="w-full h-40 object-cover rounded-md">
+
+      <h2 class="text-2xl font-bold text-[#BB423B] italic mt-4">
+        Order website for restaurant
+      </h2>
+
+      <div class="flex flex-wrap space-x-2 mt-2">
+        <button class="bg-[#7D2E32] px-5 py-1 rounded-full text-white text-xs">PHP</button>
+        <button class="bg-[#7D2E32] px-5 py-1 rounded-full text-white text-xs">JavaScript</button>
+        <button class="bg-[#7D2E32] px-5 py-1 rounded-full text-white text-xs">Tailwind</button>
+        <button class="bg-[#7D2E32] px-5 py-1 rounded-full text-white text-xs">MySQL</button>
+      </div>
+
+      <p class="text-white mt-4 text-xl font-iceland max-w-md">
+        I developed a restaurant order website using PHP, JavaScript,
+        Tailwind CSS, and MySQL. The platform allows customers to browse
+        the menu, place orders, and make payments online. It features a
+        user-friendly interface and secure payment processing.
       </p>
     </div>
-    <!-- Kart 4 -->
-    <div class="flex flex-col items-center md:items-start  p-12 rounded-lg">
-      <img src="../images/foto.png" class="w-full md:w-150 h-auto rounded-md">
-      <h2 class="text-2xl font-bold text-[#BB423B] italic mt-4">Hoofdtitle</h2>
-      <button class="bg-[#7D2E32] px-5 py-1 rounded-4xl text-white text-xs mt-2">JavaScript</button>
-      <p class="text-white mt-4 text-xl font-iceland">
-        Lorem ipsum dolor sit amet, cor adipiscing elit.
+
+    <!-- Kart 2 -->
+    <div class="flex flex-col items-start p-12 rounded-lg">
+      <img src="../portfolio-images/spinningwheel.png"
+           class="w-full h-40 object-cover rounded-md">
+
+      <h2 class="text-2xl font-bold text-[#BB423B] italic mt-4">
+        Spinning Wheel Game
+      </h2>
+
+      <div class="flex gap-2 mt-2 space-x-2">
+        <button class="bg-[#7D2E32] px-5 py-1 rounded-full text-white text-xs">
+          JavaScript
+        </button>
+        <button class="bg-[#7D2E32] px-5 py-1 rounded-full text-white text-xs">
+          HTML
+        </button>
+        <button class="bg-[#7D2E32] px-5 py-1 rounded-full text-white text-xs">
+          Tailwind
+        </button>
+        
+      </div>
+
+      <p class="text-white mt-4 text-xl font-iceland max-w-md">
+        I created an interactive spinning wheel game using JavaScript,
+        HTML, and Tailwind CSS. Players can spin the wheel to win
+        various prizes.
       </p>
     </div>
+
+   
 </section>
+
 
 
   <footer class="bg-[#330104] h-15">
@@ -89,23 +104,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
 
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      VANTA.CELLS({
-        el: "#body",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        color1: 0x56080d,
-        color2: 0x0,
-        size: 4.90,
-        speed: 3.0,
-      });
-    });
-  </script>
+  
 
 </body>
 </html>

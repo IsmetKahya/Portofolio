@@ -24,17 +24,18 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-      VANTA.CELLS({
-        el: "#body",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: false,
-        minHeight: 200.00,
-        minWidth: 200.00,
-        scale: 1.00,
-        color1: 0x56080d,
-        color2: 0x0,
-        size: 4.90,
-        speed: 3.0,
-      });
-    });
+  VANTA.CELLS({
+    el: "#body",
+    mouseControls: true,
+    touchControls: true,
+    gyroControls: false,
+    minHeight: 200.00,
+    minWidth: 200.00,
+    scale: 1.00,
+    color1: 0x56080d,
+    color2: 0x0,
+    size: 4.90,
+    speed: 3.0,
+  });
+});
+
